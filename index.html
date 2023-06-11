@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-bg">
+      <div class="container-fluid">
+        <img src="imgs/logo.jpg" width="240px">
+        <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="60%" fill="currentColor"
+            class="bi bi-list position-absolute" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link disabled">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Criar Conta</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">Nome: Arthur Felipe Parreiras </a>
+            </li><li class="nav-item">
+              <a class="nav-link disabled">Curso: Sistemas de Informação</a>
+            </li><li class="nav-item">
+              <a class="nav-link disabled">Número de matrícula: 808000</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="container">
+    <div id="carousel" class="my-5">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="carousel/carousel1.jpeg" id="carousel-image" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="carousel/carousel2.jpg" id="carousel-image" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="carousel/carousel3.jpg" id="carousel-image" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="secao-secundaria p-3 mt-3">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <br>
+          <h5 class="searchtitle">Busca Rápida</h5>
+          <br>
+          <div class="tipo">
+            <select id="type">
+              <option selected>-- Categoria --</option>
+
+            </select>
+          </div>
+          <br>
+          <div class="marca">
+            <select id="brand">
+              <option selected>-- Categoria --</option>
+
+            </select>
+          </div>
+          <br>
+          <br>
+          <div class="preco row">
+
+            <div class="input-group mb-3">
+              <form class="search-form" >
+                  <input type="text" class="form-control-input" placeholder="Nome do produto (obrigatório)"  id="form-container">
+                <button class="search-button" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+          <br>
+          
+          <br>
+          <br>
+        </div>
+
+
+
+        <section class="most-reviewed col-12 col-md-6">
+          <h2>Marcas mais avaliadas</h2>
+          <div class="list-group">
+            <button class="see-more">Ver mais...</button>
+        </section>
+      </div>
+      <br>
+    </section>
+
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" id="card-test">
+          <div class="card">
+            <img src="cards/gabinete1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer MSI MPG Sekira, 4 Fans ARGB, Vidro Frontal e Lateral Temperado,
+                Preto - 100R</h6>
+              <p class="price">R$858,10</p>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer Corsair ICUE 220T TG, RGB, Mid-Tower, ATX, Lateral e Frontal em
+                Vidro Temperado, Com FAN, Preto - CC-9011190
+              </h6>
+              <div class="price">R$705,87</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer Cooler Master MasterBox MB311L, Mini Tower, com FAN, Lateral em
+                Vidro - MCB-B311L-KGNN-S00
+              </h6>
+              <div class="price">R$435,28</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer NZXT H510 Flow, MID Tower, com FAN, Lateral em Vidro Temperado,
+                Preto - CA-H52FB-01</h6>
+              <div class="price">R$823,52</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer Rise Mode Galaxy Glass Standard, Mid Tower, Lateral e Frontal em
+                Vidro Temperado, Sem Fans, Branco - RM-GA-GGST-FW</h6>
+              <div class="price">R$823,52</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer Husky Gaming Polar, Branco - Mid Tower, ARGB com Fan, Porta
+                lateral em Vidro Temperado - HGMC011</h6>
+              <div class="price">R$588,22</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer Sharkoon VG6-W Verde, Mid Tower, Lateral em Acrílico, 3 Fans LED,
+                Preto - VG6-W</h6>
+              <div class="price">R$329,40</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cards/gabinete8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Gabinete Gamer Rise Mode Galaxy Glass, Mid Tower, Lateral e Frontal em Vidro
+                Temperado, Branco - RM-GA-GG-FW
+              </h6>
+              <div class="price">R$823,52</div>
+              <p class="review-rate"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="custom-bg">
+    <div id="newsletter">
+      <br>
+      <h5>NewsLetter</h5>
+      <p class="card-text">Inscreva-se para receber promoções e notícias via e-mail!</p>
+      <form>
+        <input type="email" id="adress">
+        <button>Increver-se!</button>
+      </form>
+      <br>
+      <br>
+
+    </div>
+    <div class="m-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Formas de Pagamento</h5>
+            <ul class="list-unstyled">
+              <li><i class="fab fa-cc-visa"></i> Visa</li>
+              <li><i class="fab fa-cc-mastercard"></i> Mastercard</li>
+              <li><i class="fab fa-cc-paypal"></i> PayPal</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Redes Sociais</h5>
+            <ul class="list-unstyled">
+              <li><i class="fab fa-facebook"></i> @master_relogios123</li>
+              <li><i class="fab fa-instagram"></i> @master_relogios123</li>
+              <li><i class="fab fa-twitter"></i> @master_relogios123</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contatos</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt"></i> Endereço: Rua do Rosário, 1081 - Angola, Betim - MG
+              </li>
+              <li><i class="fas fa-envelope"></i> Email: afparreiras@sga.pucminas.br</li>
+              <li><i class="fas fa-phone"></i> Telefone: (31) 94002-8922</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
